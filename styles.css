@@ -107,6 +107,35 @@ nav ul li a {
     color: #fff;
 }
 
+/* Camera Features Section */
+.camera-features {
+    margin: 50px 0;
+}
+
+.camera-features h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.camera-features .feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.camera-features .feature img {
+    max-width: 30%;
+    border: 5px solid #e53935;
+    margin-right: 20px;
+}
+
+.camera-features .feature p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
 /* Slider */
 .slider {
     position: relative;

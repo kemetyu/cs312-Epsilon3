@@ -13,6 +13,74 @@ body {
     padding: 20px;
 }
 
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #e53935; /* Red text on hover */
+}
+
+/* Title / Hero section */
+.hero h1 {
+    font-size: 3rem;
+    color: #e53935; /* Red title */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* Features, Options, and Pricing Section Styling */
+.camera-features h2, .options h2, .prices h2 {
+    font-size: 2rem;
+    color: #e53935; /* Red headings for Features, Options, and Prices */
+    margin-bottom: 20px;
+}
+
+.camera-features ul, .options ul {
+    margin-left: 20px;
+    list-style-type: square;
+}
+
+/* Prices Section */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #e53935; /* Red border for table */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e53935; /* Red background for table headers */
+    color: #fff;
+}
+
 /* Dropdown styling for price section */
 .price-dropdown {
     margin-bottom: 20px;
@@ -38,23 +106,20 @@ body {
     color: #fff;
 }
 
-/* Prices table styling (same as previous) */
-table {
+/* Image Slider Section */
+.slider {
+    position: relative;
+    margin: 40px 0;
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-table, th, td {
-    border: 1px solid #e53935; /* Red border for table */
+/* Gallery Section */
+.image-gallery {
+    margin: 40px 0;
 }
 
-th, td {
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #e53935; /* Red background for table headers */
-    color: #fff;
-}
+.image-gallery h2 {
+    text

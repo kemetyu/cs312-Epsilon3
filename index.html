@@ -59,10 +59,22 @@
             </ul>
         </section>
 
-        <!-- Prices Section -->
+        <!-- Prices Section with Dropdown for Scrolling -->
         <section id="prices" class="prices">
             <h2>Pricing</h2>
             <p>Explore the competitive pricing for the Epsilon 3 Camera and its options:</p>
+
+            <!-- Dropdown menu for price scrolling -->
+            <div class="price-dropdown">
+                <label for="price-options">Jump to a pricing option:</label>
+                <select id="price-options" onchange="scrollToPrice(this.value)">
+                    <option value="">Select a model</option>
+                    <option value="#standard-price">Epsilon 3 Standard</option>
+                    <option value="#pro-price">Epsilon 3 Pro</option>
+                    <option value="#bundle-price">Epsilon 3 Bundle</option>
+                </select>
+            </div>
+
             <table>
                 <thead>
                     <tr>
@@ -71,15 +83,16 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <!-- ID for each row to enable scrolling -->
+                    <tr id="standard-price">
                         <td>Epsilon 3 Standard</td>
                         <td>$1,199.99</td>
                     </tr>
-                    <tr>
+                    <tr id="pro-price">
                         <td>Epsilon 3 Pro</td>
                         <td>$1,599.99</td>
                     </tr>
-                    <tr>
+                    <tr id="bundle-price">
                         <td>Epsilon 3 Bundle</td>
                         <td>$2,099.99</td>
                     </tr>
@@ -121,5 +134,14 @@
     <footer>
         <p>&copy; 2024 Epsilon Cameras. All Rights Reserved.</p>
     </footer>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        function scrollToPrice(id) {
+            if (id) {
+                document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
 </body>
 </html>

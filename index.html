@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epsilon 3 Camera</title>
+    <!-- Linking the external stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header section with navigation bar and search functionality -->
     <header>
         <nav>
             <ul>
@@ -22,6 +24,7 @@
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+            <!-- Search bar and button -->
             <div class="search-container">
                 <input type="text" placeholder="Search...">
                 <button type="submit">Search</button>
@@ -30,13 +33,13 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
+        <!-- Hero section: large heading and introductory text -->
         <section class="hero">
             <h1>Epsilon 3 - Capture Every Moment</h1>
             <p>The ultimate handheld camera for professionals and enthusiasts alike.</p>
         </section>
 
-        <!-- Camera Features Section -->
+        <!-- Features section: Detailed description of Epsilon 3 features with corresponding images -->
         <section class="camera-features">
             <h2>Why Choose the Epsilon 3?</h2>
             <div class="feature">
@@ -59,26 +62,39 @@
             </div>
         </section>
 
-        <!-- Slider Section -->
+        <!-- Image Slider section: Users can slide between images showcasing the product -->
         <section class="slider">
             <input type="radio" name="slider" id="slide1" checked>
             <input type="radio" name="slider" id="slide2">
             <input type="radio" name="slider" id="slide3">
 
+            <!-- Each image slide links to a different radio input to display the image -->
             <div class="slides">
                 <label for="slide1" class="slide"><img src="ep1.png" alt="Epsilon 3 Slide 1"></label>
                 <label for="slide2" class="slide"><img src="ep2.png" alt="Epsilon 3 Slide 2"></label>
                 <label for="slide3" class="slide"><img src="ep3.png" alt="Epsilon 3 Slide 3"></label>
             </div>
 
+            <!-- Navigation for the slider (left/right buttons) -->
             <div class="slider-controls">
                 <label for="slide1" class="prev">&#10094;</label>
                 <label for="slide2" class="next">&#10095;</label>
                 <label for="slide3" class="next">&#10095;</label>
             </div>
         </section>
+
+        <!-- Image Gallery Section -->
+        <section class="image-gallery">
+            <h2>Explore the Epsilon 3</h2>
+            <div class="gallery">
+                <img src="ep1.png" alt="Epsilon 3 Image 1">
+                <img src="ep2.png" alt="Epsilon 3 Image 2">
+                <img src="ep3.png" alt="Epsilon 3 Image 3">
+            </div>
+        </section>
     </main>
 
+    <!-- Footer section -->
     <footer>
         <p>&copy; 2024 Epsilon Cameras. All Rights Reserved.</p>
     </footer>

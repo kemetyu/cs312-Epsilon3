@@ -28,6 +28,7 @@ nav ul li a {
     color: #fff; /* White text */
     text-decoration: none;
     font-weight: bold;
+    padding: 10px;
 }
 
 nav ul li a:hover {
@@ -36,28 +37,33 @@ nav ul li a:hover {
 
 /* Title / Hero section */
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem; /* Larger font size for the title */
     color: #e53935; /* Red title */
     text-align: center;
     margin-bottom: 20px;
+    text-transform: uppercase; /* Uppercase for a more striking title */
+    letter-spacing: 3px; /* Add letter spacing for emphasis */
 }
 
 .hero p {
     text-align: center;
     font-size: 1.2rem;
     color: #fff;
+    margin-bottom: 40px;
 }
 
-/* Features, Options, and Pricing Section Styling */
+/* Features, Options, and Prices Section Styling */
 .camera-features h2, .options h2, .prices h2 {
-    font-size: 2rem;
-    color: #e53935; /* Red headings for Features, Options, and Prices */
+    font-size: 2.5rem;
+    color: #e53935; /* Red headings */
     margin-bottom: 20px;
+    text-align: center; /* Center the section titles */
 }
 
 .camera-features ul, .options ul {
     margin-left: 20px;
     list-style-type: square;
+    color: #fff; /* Ensure the list items are white */
 }
 
 /* Prices Section */
@@ -84,6 +90,7 @@ th {
 /* Dropdown styling for price section */
 .price-dropdown {
     margin-bottom: 20px;
+    text-align: center; /* Center the dropdown */
 }
 
 .price-dropdown label {
@@ -119,7 +126,17 @@ th {
 /* Gallery Section */
 .image-gallery {
     margin: 40px 0;
+    text-align: center;
 }
 
 .image-gallery h2 {
-    text
+    font-size: 2.5rem;
+    color: #e53935; /* Red gallery heading */
+    margin-bottom: 20px;
+}
+
+.image-gallery img {
+    width: 30%;
+    margin: 10px;
+    border: 2px solid #e53935; /* Red border around images */
+}

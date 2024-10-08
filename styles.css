@@ -35,6 +35,25 @@ nav ul li a:hover {
     color: #e53935; /* Red text on hover */
 }
 
+/* Search container */
+.search-container {
+    position: relative;
+}
+
+/* Hide search input initially */
+#search-input {
+    display: none; /* Hide search input */
+    padding: 5px;
+    border: 1px solid #e53935;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Show search input when toggle is checked */
+#search-toggle:checked + label + #search-input {
+    display: block; /* Show search input */
+}
+
 /* Title / Hero section */
 .hero h1 {
     font-size: 3.5rem; /* Larger font size for the title */
@@ -53,14 +72,17 @@ nav ul li a:hover {
 }
 
 /* Features, Options, and Prices Section Styling */
-.camera-features h2, .options h2, .prices h2 {
+.camera-features h2,
+.options h2,
+.prices h2 {
     font-size: 2.5rem;
     color: #e53935; /* Red headings */
     margin-bottom: 20px;
     text-align: center; /* Center the section titles */
 }
 
-.camera-features ul, .options ul {
+.camera-features ul,
+.options ul {
     margin-left: 20px;
     list-style-type: square;
     color: #fff; /* Ensure the list items are white */
@@ -73,11 +95,14 @@ table {
     margin-top: 20px;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid #e53935; /* Red border for table */
 }
 
-th, td {
+th,
+td {
     padding: 10px;
     text-align: left;
 }
@@ -103,40 +128,50 @@ th {
     padding: 8px;
     font-size: 1rem;
     border-radius: 4px;
-    border: 1px solid #e53935; /* Red border for dropdown */
-    background-color: #000;
-    color: #fff;
 }
 
-.price-dropdown select:hover {
-    background-color: #e53935; /* Red background on hover */
-    color: #fff;
-}
-
-/* Image Slider Section */
+/* Slider styles */
 .slider {
     position: relative;
-    margin: 40px 0;
-    width: 100%;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 800px;
+    margin: 40px auto;
+    overflow: hidden;
 }
 
-/* Gallery Section */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%; /* Each slide takes full width */
+}
+
+img {
+    width: 100%; /* Responsive image */
+}
+
+/* Gallery styles */
 .image-gallery {
-    margin: 40px 0;
     text-align: center;
+    margin: 40px 0;
 }
 
-.image-gallery h2 {
-    font-size: 2.5rem;
-    color: #e53935; /* Red gallery heading */
-    margin-bottom: 20px;
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between images */
 }
 
-.image-gallery img {
-    width: 30%;
-    margin: 10px;
-    border: 2px solid #e53935; /* Red border around images */
+.gallery img {
+    width: 200px; /* Fixed width for images in gallery */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222; /* Darker footer background */
+    color: #fff;
 }

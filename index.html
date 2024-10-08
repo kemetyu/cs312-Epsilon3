@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epsilon 3 Camera</title>
-    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header section with navigation links -->
     <header>
         <nav>
             <ul>
@@ -19,52 +17,46 @@
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <!-- Search bar and button -->
+            <!-- Search toggle -->
             <div class="search-container">
-                <input type="text" placeholder="Search...">
-                <button type="submit">Search</button>
+                <input type="checkbox" id="search-toggle" />
+                <label for="search-toggle">🔍</label>
+                <input type="text" id="search-input" placeholder="Search..." />
             </div>
         </nav>
     </header>
 
     <main>
-        <!-- Home / Hero Section -->
         <section id="home" class="hero">
             <h1>Epsilon 3 - Capture Every Moment</h1>
             <p>The ultimate handheld camera for professionals and enthusiasts alike.</p>
         </section>
 
-        <!-- Features Section -->
         <section id="features" class="camera-features">
             <h2>Features</h2>
-            <p>
-                The Epsilon 3 Camera offers cutting-edge features for capturing high-quality images and videos:
-            </p>
+            <p>The Epsilon 3 Camera offers cutting-edge features for capturing high-quality images and videos:</p>
             <ul>
-                <li><strong>24.2 MP CMOS Sensor</strong> – Capture stunning, detailed images with ease.</li>
-                <li><strong>Advanced Autofocus System</strong> – Precision focus for fast-moving subjects.</li>
-                <li><strong>4K Video Recording</strong> – Shoot ultra-high-definition videos at 30fps.</li>
-                <li><strong>Weather-sealed Design</strong> – Perfect for outdoor and rugged conditions.</li>
+                <li class="feature-item">24.2 MP CMOS Sensor – Capture stunning, detailed images with ease.</li>
+                <li class="feature-item">Advanced Autofocus System – Precision focus for fast-moving subjects.</li>
+                <li class="feature-item">4K Video Recording – Shoot ultra-high-definition videos at 30fps.</li>
+                <li class="feature-item">Weather-sealed Design – Perfect for outdoor and rugged conditions.</li>
             </ul>
         </section>
 
-        <!-- Options Section -->
         <section id="options" class="options">
             <h2>Available Options</h2>
             <p>Choose the Epsilon 3 model that best suits your needs:</p>
             <ul>
-                <li><strong>Epsilon 3 Standard</strong> – Includes camera body, battery, and basic accessories.</li>
-                <li><strong>Epsilon 3 Pro</strong> – Enhanced kit with additional lenses, tripod, and carry case.</li>
-                <li><strong>Epsilon 3 Bundle</strong> – Complete package with all accessories and extended warranty.</li>
+                <li class="option-item">Epsilon 3 Standard – Includes camera body, battery, and basic accessories.</li>
+                <li class="option-item">Epsilon 3 Pro – Enhanced kit with additional lenses, tripod, and carry case.</li>
+                <li class="option-item">Epsilon 3 Bundle – Complete package with all accessories and extended warranty.</li>
             </ul>
         </section>
 
-        <!-- Prices Section with Dropdown for Scrolling -->
         <section id="prices" class="prices">
             <h2>Pricing</h2>
             <p>Explore the competitive pricing for the Epsilon 3 Camera and its options:</p>
 
-            <!-- Dropdown menu for price scrolling -->
             <div class="price-dropdown">
                 <label for="price-options">Jump to a pricing option:</label>
                 <select id="price-options" onchange="scrollToPrice(this.value)">
@@ -83,7 +75,6 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- ID for each row to enable scrolling -->
                     <tr id="standard-price">
                         <td>Epsilon 3 Standard</td>
                         <td>$1,199.99</td>
@@ -100,7 +91,45 @@
             </table>
         </section>
 
-        <!-- Image Slider (from previous code) -->
         <section class="slider">
             <input type="radio" name="slider" id="slide1" checked>
-            <input type="radio" name
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+
+            <div class="slides">
+                <label for="slide1" class="slide"><img src="ep1.png" alt="Epsilon 3 Slide 1"></label>
+                <label for="slide2" class="slide"><img src="ep2.png" alt="Epsilon 3 Slide 2"></label>
+                <label for="slide3" class="slide"><img src="ep3.png" alt="Epsilon 3 Slide 3"></label>
+            </div>
+
+            <div class="slider-controls">
+                <label for="slide1" class="prev">&#10094;</label>
+                <label for="slide2" class="next">&#10095;</label>
+                <label for="slide3" class="next">&#10095;</label>
+            </div>
+        </section>
+
+        <section class="image-gallery">
+            <h2>Explore the Epsilon 3</h2>
+            <div class="gallery">
+                <img src="ep1.png" alt="Epsilon 3 Image 1">
+                <img src="ep2.png" alt="Epsilon 3 Image 2">
+                <img src="ep3.png" alt="Epsilon 3 Image 3">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Epsilon Cameras. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Function to smoothly scroll to pricing options
+        function scrollToPrice(id) {
+            if (id) {
+                document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>
